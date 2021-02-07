@@ -12,8 +12,8 @@ const transitionEnd = (slider) => {
 
     if (direction === 1) {
       setTimeout(() => {
-        slider.prepend(slider.lastElementChild);
         slider.style.transform = 'translateX(0)';
+        slider.prepend(slider.lastElementChild);
       });
     }
   })
