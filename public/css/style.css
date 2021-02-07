@@ -29,6 +29,11 @@ body footer {
   border-radius: 5px 5px 0 0;
 }
 
+.transition {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 .container {
   width: 100%;
   height: 420px;
@@ -67,8 +72,6 @@ body footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .container .carousel_top__slider img {
@@ -101,8 +104,6 @@ body footer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .container .carousel_bottom__slider img {
