@@ -1,8 +1,7 @@
-const sliderTop = document.querySelector('.carousel_top__slider');
-const sliderBottom = document.querySelector('.carousel_bottom__slider');
+const sliders = document.querySelectorAll('.slider');
 
-const prev = document.querySelector('.prev')
-const next = document.querySelector('.next')
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
 
 let direction;
 
@@ -42,15 +41,12 @@ const slide = (slider) => {
 
 prev.addEventListener('click', () => {
   direction = -1;
-  slide(sliderTop);
-  slide(sliderBottom);
-})
+  sliders.forEach(slider => slide(slider));
+});
 
 next.addEventListener('click', () => {
   direction = 1;
-  slide(sliderTop);
-  slide(sliderBottom);
-})
+  sliders.forEach(slider => slide(slider));
+});
 
-transitionEnd(sliderTop);
-transitionEnd(sliderBottom);
+sliders.forEach(slider => transitionEnd(slider));
